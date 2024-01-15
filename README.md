@@ -1,4 +1,5 @@
-<img width="632" alt="image" src="https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/c9a1a0de-ff3b-4a48-a24f-1e746b249a49">
+<img width="615" alt="image" src="https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/dd5c8b25-2b34-499c-b961-796d5fe8b997">
+
 
 # DANet
 A PyTorch implementation of DANet based on CVPR 2019 paper [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983). 
