@@ -10,7 +10,7 @@
 5. Creating our own custom network (a simplified version of DANet) for flexibility of input data 
 6. Customizing this network for segmentation on RGB images combined with Depth Data
    
-![image](https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/bdddff52-7641-4e11-a22a-a8c1021ee25e)
+
 
 This repository is adapted from A PyTorch implementation of DANet based on CVPR 2019 paper [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983). 
 
