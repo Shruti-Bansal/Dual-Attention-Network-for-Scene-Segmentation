@@ -1,8 +1,18 @@
-<img width="615" alt="image" src="https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/dd5c8b25-2b34-499c-b961-796d5fe8b997">
+<img width="497" alt="image" src="https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/3d460017-9e82-4e27-859d-3e48d4880975">
 
+## Solution Formulation
 
-# DANet
-A PyTorch implementation of DANet based on CVPR 2019 paper [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983). 
+1. To approach the problem, the first step was to recreate the DANet implementation on RGB images of Cityscapes Dataset
+2. Next, we explored  publicly available datasets in the Autonomous Driving Domain which have semantic segmentation ground truth data  for RGB images and  LIDAR/ Depth data  
+   - Identified KITTI as a good dataset
+3. Run DANet on the KITTI semantic dataset 
+4. Obtain LIDAR data from KITTI-360 along with corresponding segmentation information
+5. Creating our own custom network (a simplified version of DANet) for flexibility of input data 
+6. Customizing this network for segmentation on RGB images combined with Depth Data
+   
+![image](https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/bdddff52-7641-4e11-a22a-a8c1021ee25e)
+
+This repository is adapted from A PyTorch implementation of DANet based on CVPR 2019 paper [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983). 
 
 ## Requirements
 - [Anaconda](https://www.anaconda.com/download/)
