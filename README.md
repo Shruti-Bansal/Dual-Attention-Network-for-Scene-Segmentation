@@ -1,3 +1,5 @@
+<img width="632" alt="image" src="https://github.com/Shruti-Bansal/Dual-Attention-Network-for-Scene-Segmentation/assets/23707426/c9a1a0de-ff3b-4a48-a24f-1e746b249a49">
+
 # DANet
 A PyTorch implementation of DANet based on CVPR 2019 paper [Dual Attention Network for Scene Segmentation](https://arxiv.org/abs/1809.02983). 
 
@@ -71,52 +73,3 @@ Model evaluation can be done similarly:
 python train_net.py --config-file configs/r50.yaml --num-gpus 8 --eval-only MODEL.WEIGHTS checkpoints/model.pth
 ```
 
-## Results
-There are some difference between this implementation and official implementation:
-1. No `Multi-Grid` and `Multi-Scale Testing`;
-2. The image sizes of `Multi-Scale Training` are (800, 832, 864, 896, 928, 960);
-3. Training step is set to `24000`;
-4. Learning rate policy is `WarmupMultiStepLR`;
-5. `Position Attention Module (PAM)` uses the similar mechanism as `Channel Attention Module (CAM)`, just uses the tensor
-and its transpose to compute attention. 
-
-<table>
-	<tbody>
-		<!-- START TABLE -->
-		<!-- TABLE HEADER -->
-		<th>Name</th>
-		<th>train time (s/iter)</th>
-		<th>inference time (s/im)</th>
-		<th>train mem (GB)</th>
-		<th>PA</br>%</th>
-		<th>mean PA %</th>
-		<th>mean IoU %</th>
-		<th>FW IoU %</th>
-		<th>download link</th>
-		<!-- TABLE BODY -->
-		<!-- ROW: r50 -->
-		<tr>
-			<td align="center"><a href="configs/r50.yaml">R50</a></td>
-			<td align="center">0.49</td>
-			<td align="center">0.12</td>
-			<td align="center">27.12</td>
-			<td align="center">94.19</td>
-			<td align="center">75.31</td>
-			<td align="center">66.64</td>
-			<td align="center">89.54</td>
-			<td align="center"><a href="https://pan.baidu.com/s/18wRQbLQyqXA4ISloUGWTSA">model</a>&nbsp;|&nbsp;ga7k</td>
-		</tr>
-		<!-- ROW: r101 -->
-		<tr>
-			<td align="center"><a href="configs/r101.yaml">R101</a></td>
-			<td align="center">0.65</td>
-			<td align="center">0.16</td>
-			<td align="center">28.81</td>
-			<td align="center">94.29</td>
-			<td align="center">76.08</td>
-			<td align="center">67.57</td>
-			<td align="center">89.69</td>
-			<td align="center"><a href="https://pan.baidu.com/s/1eqt2U2gIBeE_UMtluCKIcQ">model</a>&nbsp;|&nbsp;xnvs</td>
-		</tr>
-	</tbody>
-</table>
